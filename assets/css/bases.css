@@ -1,0 +1,25 @@
+:root {
+    --font-title: 'DM Sans', sans-serif;
+    --font-main: 'Arimo', sans-serif;
+    --bg-black: #000000;
+    --bg-blue: #004AAD;
+    --bg-red: #FF3131;
+    --bg-gray: #545454;
+    --bg-dark-gray: #272727;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-black);
+    color: #fff;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
