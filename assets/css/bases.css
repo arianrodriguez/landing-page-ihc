@@ -23,3 +23,15 @@ body {
 .flex-column {
     flex-direction: column;
 }
+
+.box {
+    background-color: var(--bg-blue);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    transition: all .3s;
+    text-transform: uppercase;
+}
+
+.box:hover {
+    background-color: #AB0000;
+}

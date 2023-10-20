@@ -1,0 +1,38 @@
+nav {
+    font-family: var(--font-title);
+}
+
+.nav_container {
+    justify-content: space-between;
+    padding: 3rem 5rem;
+}
+
+.logo img {
+    width: 300px;
+}
+
+.logo {
+    width: max-content;
+}
+
+.nav__content ul {
+    gap: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+li {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9%;
+    width: 1%; 
+    height: 4px; 
+    background-color: var(--bg-blue); 
+    transition: width 0.3s ease; 
+  }
+
+  &:hover::before {
+    width: 3%; 
+  }
+}
