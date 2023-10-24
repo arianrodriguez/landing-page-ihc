@@ -22,17 +22,33 @@ nav {
 }
 
 li {
-  &::before {
-    content: "";
-    position: absolute;
-    top: 9%;
-    width: 1%; 
-    height: 4px; 
-    background-color: var(--bg-blue); 
-    transition: width 0.3s ease; 
-  }
-
-  &:hover::before {
-    width: 3%; 
-  }
+  position: relative;
 }
+
+li a {
+  color: #fff;
+  position: relative;
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: var(--bg-blue);
+  transition: width 0.3s ease;
+  transform: translateY(-50%);
+}
+
+li:hover::before {
+  width: 100%;
+  right: 0; /* Añadir este ajuste para limitar el ancho */
+}
+
+
+
+
+
+

@@ -30,6 +30,8 @@ body {
     border-radius: 10px;
     transition: all .3s;
     text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
 }
 
 .box:hover {

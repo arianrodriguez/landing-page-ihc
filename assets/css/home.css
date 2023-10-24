@@ -1,0 +1,28 @@
+.header_container {
+    font-family: var(--font-title);
+}
+
+.header__content h1 {
+    font-size: 7rem;
+    font-weight: bold;
+}
+
+.header__content p {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+
+.header__content .box {
+    font-size: 1.3rem;
+}
+
+.car {
+    position: fixed;
+    width: 20%;
+    bottom: 25%;
+    right: 10%;
+}
+
+.phone {
+    width: 90%;
+}
