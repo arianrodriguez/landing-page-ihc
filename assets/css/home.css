@@ -1,9 +1,15 @@
 .header_container {
     font-family: var(--font-title);
+    align-items: initial;
+    position: relative;
+}
+
+.header__content {
+    padding: 4rem 5rem;
 }
 
 .header__content h1 {
-    font-size: 7rem;
+    font-size: 6rem;
     font-weight: bold;
 }
 
@@ -16,13 +22,24 @@
     font-size: 1.3rem;
 }
 
-.car {
-    position: fixed;
-    width: 20%;
-    bottom: 25%;
-    right: 10%;
+.image_container {
+    position: relative;
+    max-width: 100%;
 }
 
 .phone {
-    width: 90%;
+    max-width: 100%;
+}
+
+.gif_car{
+    position: absolute;
+    top: 26%;
+    left: 12%;
+    height: 100%; /* Ocupa todo el alto del contenedor */
+
+}
+
+.gif_car img {
+    width: 85%; /* Ajusta el ancho del GIF al 100% del contenedor */
+    height: auto; /* Mantiene la proporción original */
 }
