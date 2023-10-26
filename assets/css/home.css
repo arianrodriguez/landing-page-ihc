@@ -47,3 +47,31 @@ header {
     width: 85%; /* Ajusta el ancho del GIF al 100% del contenedor */
     height: auto; /* Mantiene la proporción original */
 }
+
+@media screen and (max-width: 980px) {
+    .header__content h1 {
+        font-size: 4rem;
+    }
+
+    .header__content p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .header_container {
+        flex-direction: column;
+    }
+    .header__content {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header__content h1 {
+        font-size: 2.5rem;
+    }
+    .header__content p {
+        font-size: 1rem;
+    }
+}

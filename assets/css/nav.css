@@ -106,6 +106,10 @@ li:hover::before {
   li a {
     color: #000;
   }
+
+  .red-gradient {
+    bottom: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
