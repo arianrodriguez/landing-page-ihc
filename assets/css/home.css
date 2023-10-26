@@ -1,3 +1,7 @@
+header {
+    position: relative;
+}
+
 .header_container {
     font-family: var(--font-title);
     align-items: initial;
