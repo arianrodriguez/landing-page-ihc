@@ -92,7 +92,6 @@ li:hover::before {
 
   .nav__content-toggle {
     display: inherit;
-    margin: 1.5rem; 
     z-index: 2;
   }
 
@@ -109,6 +108,17 @@ li:hover::before {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .nav_container {
+    padding: 3rem 2rem;
+  }
+  .logo img {
+    width: 180px;
+  }
+  .nav__content-toggle {
+    font-size: 1.5rem;
+  }
+}
 
 
 
