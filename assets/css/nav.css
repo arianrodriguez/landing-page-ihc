@@ -47,7 +47,67 @@ li:hover::before {
   right: 0; /* Añadir este ajuste para limitar el ancho */
 }
 
+.nav__content-toggle {
+    display: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
 
+.nav__content-active ul {
+    gap: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1100px) {
+
+  .nav__content { /* el navbar se oculta */
+    position: fixed;
+    top: -200%;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+    height: 100vh;
+    background-color: #fff;
+    opacity: .6;
+    color: #000;
+    transition: 2.5s;
+  }
+
+  .nav__content-active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    width: 68%;
+    height: 100vh;
+    background-color: #fff;
+    transition: 1s;
+    z-index: 2;
+    height: 100vh;
+  }
+
+  .nav__content-toggle {
+    display: inherit;
+    margin: 1.5rem; 
+    z-index: 2;
+  }
+
+  .nav__content-active ul {
+    gap: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  li a {
+    color: #000;
+  }
+}
 
 
 
