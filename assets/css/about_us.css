@@ -33,8 +33,7 @@
 
 
 .about__content {
-    width: 960px;
-    margin: 0 auto;
+    padding: 2rem 5rem;
     text-align: center;
 }
 .about__content p {
@@ -44,4 +43,32 @@
 
 .about__content > p {
     margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 1000px) {
+    #gray-aboutus, #red-aboutus, #blue-aboutus {
+        width: 550px;
+        height: 550px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .about__container {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about__container h1 {
+        font-size: 2.5rem;
+    }
+
+    .about__container p {
+        font-size: 1.2rem;
+    }
+
+    #gray-aboutus, #red-aboutus, #blue-aboutus {
+        width: 350px;
+        height: 350px;
+    }
 }
