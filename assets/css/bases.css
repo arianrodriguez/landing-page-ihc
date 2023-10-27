@@ -12,6 +12,14 @@ body {
     font-family: var(--font-main);
     background-color: var(--bg-black);
     color: #fff;
+    overflow: hidden;
+
+}
+
+h1 {
+    font-family: var(--font-title);
+    font-size: 6rem;
+    font-weight: bold;
 }
 
 .flex {
@@ -49,5 +57,36 @@ body {
     height: 60%;
     bottom: 10%;
     right: 0;
+    z-index: -1;
+}
+
+.blue-gradient {
+    background-image: url(../../assets/img/DegradadoAzul.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .6;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.gray-gradient {
+    background-image: url(../../assets/img/DegradadoGris.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .6;
+    position: absolute;
+    z-index: -1;
+}
+
+.cherry-gradient {
+    background-image: url(../../assets/img/DegradadoGuinda.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .6;
+    position: absolute;
     z-index: -1;
 }

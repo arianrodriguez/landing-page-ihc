@@ -13,11 +13,6 @@ header {
     padding: 4rem 5rem;
 }
 
-.header__content h1 {
-    font-size: 6rem;
-    font-weight: bold;
-}
-
 .header__content p {
     font-size: 2rem;
     margin: 1.5rem 0;
@@ -40,8 +35,6 @@ header {
     position: absolute;
     top: 26%;
     left: 12%;
-    height: 100%; /* Ocupa todo el alto del contenedor */
-
 }
 
 .gif_car img {

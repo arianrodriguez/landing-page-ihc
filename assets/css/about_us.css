@@ -1,0 +1,47 @@
+
+.body__aboutus nav {
+    position: relative;
+}
+
+#red-aboutus {
+    width: 850px;
+    height: 850px;
+    bottom: -50%;
+}
+
+#blue-aboutus {
+    width: 850px;
+    height: 850px;
+    left: -30%;
+}
+
+#gray-aboutus {
+    width: 850px;
+    height: 850px;
+    right: -20%;
+    top: 50%;
+}
+
+.about__main {
+    position: relative;
+}
+
+.about__container {
+    flex-direction: column;
+    height: calc(100vh - 10rem);
+}
+
+
+.about__content {
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+.about__content p {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+
+.about__content > p {
+    margin-bottom: 4rem;
+}
