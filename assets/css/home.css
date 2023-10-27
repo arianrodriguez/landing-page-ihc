@@ -59,6 +59,9 @@ header {
     .header__content {
         text-align: center;
     }
+    .body__home {
+        overflow: auto;
+    }
 }
 
 @media screen and (max-width: 400px) {
