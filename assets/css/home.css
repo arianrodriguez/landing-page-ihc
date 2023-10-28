@@ -42,6 +42,12 @@ header {
     height: auto; /* Mantiene la proporción original */
 }
 
+@media screen and (max-width: 1300px) {
+    .body__home {
+        overflow: auto;
+    }
+}
+
 @media screen and (max-width: 980px) {
     .header__content h1 {
         font-size: 4rem;

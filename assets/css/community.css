@@ -1,0 +1,42 @@
+.body__community {
+    overflow: auto;
+}
+
+.community_container {
+    flex-direction: column;
+    height: calc(100vh - 10rem);
+}
+
+.community__content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.community__content h1 {
+    margin-bottom: 4rem;
+}
+
+.cards__container {
+    gap: 2rem;
+    align-items: initial;
+}
+
+.cards__container > div{
+    position: relative;
+    padding-top: 5rem;
+}
+
+.card img {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 150px;
+}
+
+.card__wrapped {
+    width: 350px;
+}
+
+.cards__container > div:nth-child(2) {
+    margin-top: -30px;
+}

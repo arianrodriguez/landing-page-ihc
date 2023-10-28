@@ -90,3 +90,34 @@ h1 {
     position: absolute;
     z-index: -1;
 }
+
+
+.card {
+    background-color: var(--bg-dark-gray);
+    max-width: 350px;
+    min-height: 350px;
+    max-height: 350px;
+    border-radius: 10px;
+}
+
+.card__content {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.card__content h2 {
+    font-size: 1.8rem;
+    font-family: var(--font-title);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+}
+
+.card__content span {
+    color: #8F8C8D;
+    font-style: italic;
+}
+
+.card__content p{
+    margin: 2rem 0 1rem 0;
+}
