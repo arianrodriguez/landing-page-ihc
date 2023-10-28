@@ -29,14 +29,41 @@
 .card img {
     position: absolute;
     top: 0;
-    left: 30%;
+    transform: translateX(-50%);
     width: 150px;
 }
 
 .card__wrapped {
-    width: 350px;
+    min-width: 250px;
+    max-width: 350px;
 }
 
 .cards__container > div:nth-child(2) {
     margin-top: -30px;
+}
+
+@media screen and (max-width: 1000px) {
+    .cards__container .card {
+        min-height: 400px;
+        max-height: 400px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .community_container {
+        height: auto;
+    }
+    .cards__container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards__container > div:nth-child(2) {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .community__content h1 {
+        font-size: 4rem;
+    }
 }

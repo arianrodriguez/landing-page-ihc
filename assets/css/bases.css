@@ -94,7 +94,7 @@ h1 {
 
 .card {
     background-color: var(--bg-dark-gray);
-    max-width: 350px;
+    width: 100%;
     min-height: 350px;
     max-height: 350px;
     border-radius: 10px;
