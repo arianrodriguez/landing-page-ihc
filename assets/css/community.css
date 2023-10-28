@@ -4,7 +4,7 @@
 
 .community_container {
     flex-direction: column;
-    height: calc(100vh - 10rem);
+    height: calc(100vh - 5rem);
 }
 
 .community__content {
@@ -42,10 +42,24 @@
     margin-top: -30px;
 }
 
+.community__content > div:nth-child(1) {
+    position: relative;
+}
+
+.community__content .cherry-gradient {
+    width: 550px;
+    height: 550px;
+    top: -250%;
+    left: 10%;
+}
+
 @media screen and (max-width: 1000px) {
     .cards__container .card {
         min-height: 400px;
         max-height: 400px;
+    }
+    .community__content {
+        height: calc(100vh - 10rem);
     }
 }
 
@@ -59,6 +73,14 @@
     }
     .cards__container > div:nth-child(2) {
         margin-top: 0;
+    }
+
+    .community__content .cherry-gradient  {
+        width: 350px;
+        height: 350px;
+        top: -120%;
+        left: 0;
+
     }
 }
 
