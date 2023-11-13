@@ -1,6 +1,6 @@
 :root {
     --font-title: 'DM Sans', sans-serif;
-    --font-main: 'Arimo', sans-serif;
+    --font-main: 'Open Sans', sans-serif;
     --bg-black: #000000;
     --bg-blue: #004AAD;
     --bg-red: #FF3131;
@@ -13,7 +13,7 @@ body {
     background-color: var(--bg-black);
     color: #fff;
     overflow: hidden;
-
+    letter-spacing: .1rem;
 }
 
 h1 {
@@ -40,6 +40,7 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .box:hover {
@@ -120,4 +121,16 @@ h1 {
 
 .card__content p{
     margin: 2rem 0 1rem 0;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0;
+    font-size: 1.1rem;
+    letter-spacing: .15rem;
 }

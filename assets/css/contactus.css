@@ -1,0 +1,144 @@
+.contactsection {
+    overflow: initial;
+}
+
+.contact_us-container {
+    flex-direction: column;
+    height: calc(100vh - 12rem);
+}
+
+.contact-us-content {
+    width: 100%;
+    padding: 2rem 5rem;   
+    gap: 10rem;
+    align-items: end;
+}
+
+.contact-us {
+    width: 100%;
+}
+
+.contact-us h1 {
+    font-family: var(--font-title);
+    margin-bottom: 6rem;
+}
+
+.input__container{
+    position: relative;
+}
+
+.contact-us input {
+    width: 800px;
+    display: block;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-bottom: 1.8px solid #fff;
+    margin: 3rem 0;
+    font-family: var(--font-main);
+}
+
+.contact-us label {
+    position: absolute;
+    transition: all .5s;
+    top: 1%;
+}
+
+
+/* buscar el input que está en su focus, y buscar a su hno label */
+.input__container input:focus + .contact-us-label {
+    transform: translateY(-1.2rem);
+    font-size: 1.3rem;
+}
+    /* los inputs que no tengan placeholder (ya está completo), buscar al label y mantenerlo arriba*/
+.input__container input:not(:placeholder-shown) + .contact-us-label {
+    transform: translateY(-1.2rem);
+    font-size: 1.3rem;
+}
+    
+.contact-business-solution {
+    max-width: 500px;
+}
+
+.contact-business-solution .card {
+    padding: 2rem;
+    line-height: 1.8rem;
+}
+
+.contact-business-solution h2 {
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.contact-business-solution p {
+    margin-top: 2rem;
+    font-size: .8rem;
+    margin-bottom: 2rem;
+}
+
+.contact-business-solution a {
+    color: var(--bg-blue);
+}
+
+.card-links__content {
+    color: var(--bg-gray);
+    font-size: .8rem;
+}
+
+.contact-business-solution .card {
+    position: relative;
+    min-height: none;
+    max-height: none;
+}
+
+.contact-business-solution .card .gray-gradient {
+    width: 350px;
+    height: 350px;
+    bottom: -45%;
+    left: -20%;
+    z-index: -1;
+}
+
+.contact-business-solution .card .red-gradient {
+    right: auto;
+    width: 430px;
+    height: 430px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1280px)  {
+    .contact-us input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .contact_us-container {
+        height: calc(100vh - 2rem);
+    }
+    .contact-us-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .contact_us-container {
+        display: block;
+
+    }
+    .contact-business-solution .card .red-gradient {
+        width: 250px;
+        height: 250px;
+        top: -30%;
+        right: -10%;
+    }
+
+    .contact-us h1 {
+        font-size: 3rem;
+    }
+}
