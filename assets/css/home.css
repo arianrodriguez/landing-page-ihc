@@ -41,6 +41,21 @@ header {
     width: 85%; /* Ajusta el ancho del GIF al 100% del contenedor */
     height: auto; /* Mantiene la proporción original */
 }
+#video > div:nth-child(1) {
+    
+    justify-content: right;
+}
+
+#close-window {
+    font-size: 2rem;
+    text-align: right;
+    cursor: pointer;
+    padding: .5rem 0;
+}
+
+#close-window:hover {
+    transform: scale(1.1);
+}
 
 @media screen and (max-width: 1300px) {
     .body__home {

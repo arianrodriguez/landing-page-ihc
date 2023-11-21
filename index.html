@@ -47,8 +47,18 @@
                 <h1>Eficiencia del dinero y calidad en autopiezas</h1>
                 <p>Tu destino rápido, inteligente y confiable para encontrar, comparar y ahorrar en todas tus autopiezas</p>
                 <div class="flex">
-                    <a href="about_us.html" class="box">Conoce más</a>
+                    <div class="box" id="button-video">Nuestro equipo</div>
                 </div>
+
+                <dialog id="video">
+                    <div class="flex">
+                        <i class="fa-solid fa-xmark" id="close-window" style="color: #000000;"></i>
+
+                    </div>
+                    <div class="video__content">
+                        <iframe width="auto" height="315" src="https://www.youtube.com/embed/FMLBxUrd3RQ?si=tGUQn1u7wASbIcNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </dialog>
             </div>
 
             <div class="header__animation">
@@ -68,6 +78,7 @@
     </header>
 
     <script src="./js/menu-toggle.js"></script>
+    <script src="./js/modal-window.js"></script>
     
 </body>
 </html>
